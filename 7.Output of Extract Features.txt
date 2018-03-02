@@ -1,0 +1,21 @@
+{
+    'contains(arm)': True,             #notice this
+    'contains(articles)': False,
+    'contains(attended)': False,
+    'contains(australian)': False,
+    'contains(awfully)': False,
+    'contains(bloodwork)': True,       #notice this
+    'contains(bombs)': False,
+    'contains(cici)': False,
+    .....
+    'contains(head)': False,
+    'contains(heard)': False,
+    'contains(hey)': False,
+    'contains(hurts)': True,           #notice this
+    .....
+    'contains(irish)': False,
+    'contains(jokes)': False,
+    .....
+    'contains(women)': False
+}
+Bulk E

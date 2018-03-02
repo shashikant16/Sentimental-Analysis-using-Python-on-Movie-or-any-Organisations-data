@@ -1,0 +1,24 @@
+# print informative features about the classifier
+print NBClassifier.show_most_informative_features(10)
+
+# Output
+# ======
+# Most Informative Features
+#    contains(twitter) = False          positi : neutra =      2.3 : 1.0
+#        contains(car) = False          positi : negati =      2.3 : 1.0
+#      contains(hurts) = False          positi : negati =      2.3 : 1.0
+#   contains(articles) = False          positi : neutra =      1.4 : 1.0
+#      contains(heard) = False          neutra : positi =      1.4 : 1.0
+#        contains(hey) = False          neutra : positi =      1.4 : 1.0
+#      contains(total) = False          positi : negati =      1.4 : 1.0
+#         contains(mi) = False          positi : neutra =      1.4 : 1.0
+#        contains(day) = False          positi : negati =      1.4 : 1.0
+#contains(makeitcount) = False          positi : neutra =      1.4 : 1.0
+
+testTweet = 'I am so badly hurt'
+processedTestTweet = processTweet(testTweet)
+print NBClassifier.classify(extract_features(getFeatureVector(processedTestTweet)))
+
+#Output
+#======
+#positive

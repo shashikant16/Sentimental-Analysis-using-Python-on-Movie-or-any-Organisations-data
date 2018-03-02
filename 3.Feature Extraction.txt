@@ -1,0 +1,10 @@
+#Read the tweets one by one and process it
+inpTweets = csv.reader(open('data/sampleTweets.csv', 'rb'), delimiter=',', quotechar='|')
+tweets = []
+for row in inpTweets:
+    sentiment = row[0]
+    tweet = row[1]
+    processedTweet = processTweet(tweet)
+    featureVector = getFeatureVector(processedTweet, stopWords)
+    tweets.append((featureVector, sentiment));
+#end loop

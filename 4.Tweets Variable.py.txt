@@ -1,0 +1,11 @@
+tweets = [(['hey', 'cici', 'luv', 'mixtape', 'drop', 'soon', 'fantasy', 'ride'], 'positive'),
+           (['heard', 'congrats'], 'positive'),
+           (['ncaa', 'franklin', 'wild'], 'positive'),
+           (['share', 'jokes', 'quotes', 'music', 'photos', 'news', 'articles', 'facebook', 'twitter'], 'neutral'),
+           (['night', 'twitter', 'thelegionofthefallen', 'cimes', 'awfully'], 'neutral'),
+           (['finished', 'mi', 'run', 'pace', 'gps', 'nikeplus', 'makeitcount'], 'neutral'),
+           (['disappointing', 'day', 'attended', 'car', 'boot', 'sale', 'raise', 'funds', 'sanctuary',
+             'total', 'entry', 'fee', 'sigh'], 'negative'),
+           (['taking', 'irish', 'car', 'bombs', 'strange', 'australian', 'women', 'drink', 'head',
+             'hurts'], 'negative'),
+           (['bloodwork', 'arm', 'hurts'], 'negative')]

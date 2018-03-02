@@ -1,0 +1,40 @@
+#Max Entropy Classifier
+MaxEntClassifier = nltk.classify.maxent.MaxentClassifier.train(training_set, 'GIS', trace=3, \
+                    encoding=None, labels=None, sparse=True, gaussian_prior_sigma=0, max_iter = 10)
+testTweet = 'Congrats @ravikiranj, i heard you wrote a new tech post on sentiment analysis'
+processedTestTweet = processTweet(testTweet)
+print MaxEntClassifier.classify(extract_features(getFeatureVector(processedTestTweet)))
+
+# Output
+# =======
+# positive
+
+#print informative features
+print MaxEntClassifier.show_most_informative_features(10)
+
+# Output
+# =======
+# ==> Training (10 iterations)
+#
+#      Iteration    Log Likelihood    Accuracy
+#      ---------------------------------------
+#             1          -1.09861        0.333
+#             2          -0.86350        1.000
+#             3          -0.69357        1.000
+#             4          -0.57184        1.000
+#             5          -0.48323        1.000
+#             6          -0.41705        1.000
+#             7          -0.36625        1.000
+#             8          -0.32624        1.000
+#             9          -0.29401        1.000
+#         Final          -0.26751        1.000
+#  -0.269 Correction feature (58)
+#   0.192 contains(arm)==True and label is 'negative'
+#   0.192 contains(bloodwork)==True and label is 'negative'
+#   0.168 contains(congrats)==True and label is 'positive'
+#   0.168 contains(heard)==True and label is 'positive'
+#   0.152 contains(franklin)==True and label is 'positive'
+#   0.152 contains(wild)==True and label is 'positive'
+#   0.152 contains(ncaa)==True and label is 'positive'
+#   0.147 contains(night)==True and label is 'neutral'
+#   0.147 contains(awfully)==True and label is 'neutral'
